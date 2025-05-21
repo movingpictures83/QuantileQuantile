@@ -16,5 +16,6 @@ output <- function(outputfile) {
 #par(mfrow=c(1,2))
 pdf(outputfile)
 QQP(EBOut)
+write.csv(EBOut$PPMat, paste(outputfile, "csv", sep="."))
 }
 
